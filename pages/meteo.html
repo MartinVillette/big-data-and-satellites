@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Data Spatial - Météorologie</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/meteo.css">
+</head>
+<body class="page-meteo">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Big Data Spatial</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Introduction</a></li>
+                <li><a href="meteo.html" class="nav-link active">Météorologie</a></li>
+                <li><a href="telecom.html" class="nav-link">Télécommunications</a></li>
+                <li><a href="observation.html" class="nav-link">Observation Terre</a></li>
+                <li><a href="navigation.html" class="nav-link">Navigation</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background elements -->
+    <div class="clouds-layer"></div>
+    <div class="weather-particles"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 class="hero-title">Météorologie Satellitaire</h1>
+        <p class="hero-subtitle">La Prévision Numérique du Temps à l'Ère du Big Data</p>
+        <a href="#deluge" class="hero-cta">Explorer</a>
+    </header>
+
+    <!-- Déluge de Données Section -->
+    <section class="content-section" id="deluge">
+        <div class="content-wrapper">
+            <h2 class="section-title">Le Déluge de Données (Data Deluge)</h2>
+            
+            <p class="section-text">La météorologie est l'une des disciplines les plus productrices de données au monde, confrontée à un défi de gestion de volumes <strong>exa-métriques</strong>. L'augmentation exponentielle de la résolution spatiale et spectrale des capteurs, couplée à la multiplication des vecteurs d'observation, génère un flux continu dépassant désormais les capacités de stockage traditionnelles "on-premise".</p>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Volumes en expansion</h3>
+                <p class="section-text">Les archives de la NASA pour les sciences de la Terre devraient atteindre <strong>245 pétaoctets (PB) en 2025</strong>, alimentées par des missions comme SWOT et NISAR qui produisent conjointement environ <strong>100 téraoctets par jour</strong>.</p>
+            </div>
+
+            <p class="section-text">En Europe, le passage de la seconde à la troisième génération de satellites Météosat (MTG) a <strong>multiplié par dix</strong> le débit de données à traiter, imposant une refonte totale des chaînes de traitement sol.</p>
+
+            <div class="image-container">
+                <img src="images/meteo-1.png" alt="Évolution des volumes de données" class="content-image">
+                <p class="image-caption">Figure 1 : Croissance exponentielle des volumes de données météorologiques</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">245 PB</span>
+                    <span class="stat-label">Archives NASA 2025</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100 TB/jour</span>
+                    <span class="stat-label">SWOT + NISAR</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">×10</span>
+                    <span class="stat-label">Débit MTG vs Météosat-2</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Big Data Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Mutation des Infrastructures</h2>
+            
+            <h3 class="subsection-title">Les 5V du Big Data Météorologique</h3>
+            <p class="section-text">Ce changement d'échelle impose le concept des <strong>"5V" du Big Data</strong> (Volume, Vélocité, Variété, Véracité, Valeur) comme cadre opérationnel. La météorologie moderne ne consiste plus seulement à observer, mais à ingérer des flux hétérogènes (radars, sondeurs, imagerie optique, signaux GNSS) en temps quasi-réel.</p>
+
+            <h3 class="subsection-title">Data Lakes Fédérés</h3>
+            <p class="section-text">Pour répondre à cette exigence, les agences ont abandonné les silos de données pour des architectures de <strong>"Data Lakes" fédérés et distribués</strong>, comme le European Weather Cloud ou le système de Destination Earth.</p>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Near-Data Processing</h3>
+                <p class="section-text">Ces infrastructures permettent le "near-data processing" : les utilisateurs n'ont plus à télécharger les pétaoctets de données, mais envoient leurs algorithmes s'exécuter directement là où la donnée est stockée, réduisant drastiquement les goulots d'étranglement réseaux et les temps de latence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Technologies Spécifiques</h2>
+            
+            <h3 class="subsection-title">Capteurs Haute Densité</h3>
+            <p class="section-text">L'explosion du volume de données provient de deux ruptures technologiques majeures dans le segment spatial : l'avènement des <strong>sondeurs hyperspectraux</strong> et la densification par les constellations.</p>
+
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">Sondeurs Hyperspectraux</h4>
+                    <ul class="content-list">
+                        <li><strong>Metop-SG A1 / IASI-NG :</strong> Milliers de canaux spectraux pour profils verticaux haute précision</li>
+                        <li>Densité d'information par pixel bien supérieure aux générations précédentes</li>
+                        <li>Résolution spectrale et spatiale inédite</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">Imageurs Avancés</h4>
+                    <ul class="content-list">
+                        <li><strong>MTG-I1 Lightning Imager :</strong> Première imagerie continue des éclairs</li>
+                        <li>Suivi des orages à haute fréquence</li>
+                        <li>Nouvelle couche de données massives</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Edge Computing en Orbite</h3>
+            <p class="section-text">Face à la saturation de la bande passante descendante (downlink) causée par ces volumes, l'industrie se tourne vers le <strong>Edge Computing</strong> (traitement en bordure).</p>
+
+            <div class="image-container">
+                <img src="images/meteo-2.png" alt="Edge Computing satellitaire" class="content-image">
+                <p class="image-caption">Figure 2 : Phi-sat-2 et le traitement embarqué</p>
+            </div>
+
+            <blockquote class="quote">
+                La mission Phi-sat-2 de l'ESA, lancée en Août 2024, illustre cette tendance : plutôt que de transmettre toutes les images brutes au sol, le satellite utilise des accélérateurs matériels embarqués pour filtrer automatiquement les nuages ou détecter des anomalies maritimes en orbite. Seule l'information utile (la 'smart data') est transmise.
+            </blockquote>
+
+            <p class="section-text">Cette approche réduit le volume de transfert de plusieurs ordres de grandeur tout en augmentant la pertinence opérationnelle.</p>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Défis Technologiques</h2>
+            
+            <h3 class="subsection-title">Assimilation de Données</h3>
+            <p class="section-text">Le défi principal du Big Data météorologique réside dans l'<strong>assimilation de données</strong>. Les modèles numériques actuels (NWP) peinent à ingérer la totalité des observations disponibles : une grande partie des données brutes est "élaguée" (<em>thinning</em>) faute de puissance de calcul pour modéliser les erreurs de covariance en temps réel.</p>
+
+            <h3 class="subsection-title">Inter-calibration des Constellations</h3>
+            <p class="section-text">L'intégration de données issues de constellations de CubeSats à bas coût (comme celles de Tomorrow.io) pose des problèmes complexes d'<strong>inter-calibration</strong> (projet ACCURACy), car ces capteurs sont plus sensibles aux variations thermiques que leurs équivalents institutionnels, risquant d'introduire des biais dans les archives climatiques s'ils ne sont pas rigoureusement harmonisés.</p>
+
+            <h3 class="subsection-title">Valorisation Économique</h3>
+            <p class="section-text">La valorisation de ces mégadonnées transforme néanmoins des secteurs entiers de l'économie.</p>
+
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">Énergie Renouvelable</h4>
+                    <p class="section-text">L'analyse de séries temporelles massives de vents et d'ensoleillement permet d'intégrer des volumes records d'énergies renouvelables sur les réseaux, en minimisant les coûts d'équilibrage.</p>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">Assurance Paramétrique</h4>
+                    <p class="section-text">En se basant sur des indices satellitaires incontestables (vent, pluie), des acteurs comme Arbol ou le CCRIF ont pu déclencher des paiements automatisés records (jusqu'à <strong>85 millions de dollars</strong> après l'ouragan Beryl) en quelques jours.</p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/meteo-3.png" alt="Valorisation économique" class="content-image">
+                <p class="image-caption">Figure 3 : Impact économique de l'assurance paramétrique satellitaire</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Donnée comme Actif Financier</h3>
+                <p class="section-text">La donnée satellitaire certifiée est devenue un actif financier liquide, permettant des transactions automatisées et des décisions en temps réel dans les secteurs de l'énergie, l'agriculture et l'assurance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Le Futur & R&D</h2>
+            
+            <h3 class="subsection-title">L'IA comme Moteur d'Exploitation du Big Data</h3>
+            <p class="section-text">L'avenir réside dans l'utilisation de l'<strong>Intelligence Artificielle</strong> non plus comme une simple technique d'analyse, mais comme le seul moyen viable de valoriser l'intégralité du Big Data accumulé.</p>
+
+            <h3 class="subsection-title">WeatherNext 2 : Le Paradigme IA-First</h3>
+            <p class="section-text">C'est ici qu'intervient le modèle <strong>WeatherNext 2</strong> de Google DeepMind, dévoilé fin 2025. Ce modèle n'existe que grâce à l'existence préalable de bases de données massives comme la réanalyse ERA5 (des décennies d'observations satellitaires archivées).</p>
+
+            <div class="video-container">
+                <video controls class="content-video">
+                    <source src="videos/meteo-1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+                <p class="image-caption">Vidéo 1 : Démonstration de WeatherNext 2</p>
+            </div>
+
+            <blockquote class="quote">
+                En s'entraînant sur ces pétaoctets d'historique, WeatherNext 2 apprend à prédire la météo sans résoudre les équations physiques à chaque étape, contournant ainsi le goulot d'étranglement du calcul intensif.
+            </blockquote>
+
+            <h3 class="subsection-title">Jumeaux Numériques de la Terre (Digital Twins)</h3>
+            <p class="section-text">La R&D s'oriente désormais vers des <strong>Jumeaux Numériques</strong> (Digital Twins) de la Terre, comme ceux du programme européen Destination Earth. Ces répliques virtuelles fusionnent observations temps réel et modélisation haute résolution pour permettre des scénarios "what-if" interactifs.</p>
+
+            <div class="image-container">
+                <img src="images/meteo-4.png" alt="Digital Twins de la Terre" class="content-image">
+                <p class="image-caption">Figure 4 : Architecture des Digital Twins - Destination Earth</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Modèles de Fondation pour la Terre</h3>
+                <p class="section-text">L'objectif est de créer des "modèles de fondation" pour la Terre, capables de réaliser des tâches non supervisées en transférant des connaissances acquises sur l'ensemble du corpus de données planétaires. L'IA devient ainsi l'interface nécessaire pour naviguer et donner du sens à l'océan de données que les satellites continueront de déverser.</p>
+            </div>
+
+            <p class="section-text">L'ECMWF a également annoncé l'intégration opérationnelle de prévisions basées sur l'IA, marquant une transition historique de la prévision numérique traditionnelle vers des approches hybrides physique-IA.</p>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Références</h2>
+            <div class="bibliography">
+                <p class="biblio-entry">
+                    <strong>[1]</strong> NASA Earth Data. "Earth Science Data Systems Program." 
+                    <a href="https://www.earthdata.nasa.gov/" target="_blank" rel="noopener noreferrer">www.earthdata.nasa.gov/</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[2]</strong> EUMETSAT. "MTG Lightning Imager." <em>Meteosat Third Generation Documentation</em>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[3]</strong> ESA. "Phi-sat-2 Mission - AI-Enabled Onboard Edge Computing." <em>European Space Agency, 2024</em>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[4]</strong> UN-SPIDER. "AI-Enabled Onboard Edge Computing for Satellite Intelligence in Disaster Management." 
+                    <a href="https://www.un-spider.org/news-and-events/news/ai-enabled-onboard-edge-computing-satellite-intelligence-disaster-management" target="_blank" rel="noopener noreferrer">www.un-spider.org</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[5]</strong> ACCURACy Project. "Calibration of CubeSat Constellations for Climate Applications." <em>European Climate Research Initiative</em>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[6]</strong> GM Insights. "Parametric Insurance Market Analysis (2025-2030)." 
+                    <a href="https://www.gminsights.com/industry-analysis/parametric-insurance-market" target="_blank" rel="noopener noreferrer">www.gminsights.com/industry-analysis/parametric-insurance-market</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[7]</strong> PreventionWeb. "Hurricane Beryl: Record Parametric Payouts Underline Evolution of CCRIF's Role in Caribbean." 
+                    <a href="https://www.preventionweb.net/news/hurricane-beryl-record-parametric-payouts-underline-evolution-ccrifs-role-caribbean" target="_blank" rel="noopener noreferrer">www.preventionweb.net</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[8]</strong> Arbol. "Hurricane Insurance 2025: The Role of Parametric Solutions." 
+                    <a href="https://www.arbol.io/post/hurricane-insurance-2025" target="_blank" rel="noopener noreferrer">www.arbol.io/post/hurricane-insurance-2025</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[9]</strong> Google DeepMind. "WeatherNext 2: AI-Driven Weather Forecasting at Scale." 
+                    <a href="https://blog.google/technology/google-deepmind/weathernext-2/" target="_blank" rel="noopener noreferrer">blog.google/technology/google-deepmind/weathernext-2/</a> (2025)
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[10]</strong> ECMWF. "ECMWF's AI Forecasts Become Operational." 
+                    <a href="https://www.ecmwf.int/en/about/media-centre/news/2025/ecmwfs-ai-forecasts-become-operational" target="_blank" rel="noopener noreferrer">www.ecmwf.int</a> (2025)
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[11]</strong> European Commission. "Destination Earth Programme - Digital Twins of the Earth." <em>Digital Europe Programme Initiative</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Observation - Thème vert/émeraude */
+
+@keyframes terrain-shift {
+    0%, 100% { background-position: 0 0; }
+    50% { background-position: 50px 50px; }
+}
+
+.page-observation .earth-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at 25% 35%, rgba(16, 185, 129, 0.15), transparent 50%),
+        radial-gradient(ellipse at 75% 65%, rgba(52, 211, 153, 0.12), transparent 50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-observation .terrain-patterns {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20% 30%, rgba(16, 185, 129, 0.3), transparent),
+        radial-gradient(2px 2px at 60% 70%, rgba(52, 211, 153, 0.25), transparent),
+        radial-gradient(3px 3px at 80% 40%, rgba(110, 231, 183, 0.2), transparent);
+    background-size: 600px 600px;
+    animation: terrain-shift 30s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-observation .hero {
+    background: radial-gradient(ellipse at center, rgba(16, 185, 129, 0.25) 0%, transparent 60%);
+}
+
+.page-observation .hero-title {
+    background: linear-gradient(45deg, #10b981, #34d399, #6ee7b7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-observation .nav-logo {
+    color: #34d399;
+}
+
+.page-observation .nav-logo:hover {
+    color: #6ee7b7;
+}
+
+.page-observation .section-title { 
+    color: #34d399; 
+    border-bottom-color: rgba(52, 211, 153, 0.5); 
+}
+
+.page-observation .subsection-title { 
+    color: #6ee7b7; 
+}
+
+.page-observation .highlight-box { 
+    background: rgba(16, 185, 129, 0.15); 
+    border-left-color: #10b981; 
+}
+
+.page-observation .highlight-title {
+    color: #34d399;
+}
+
+.page-observation .stat-card { 
+    background: rgba(16, 185, 129, 0.1); 
+    border-color: rgba(52, 211, 153, 0.3); 
+}
+
+.page-observation .stat-card:hover {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.2);
+}
+
+.page-observation .content-wrapper {
+    background: rgba(10, 30, 25, 0.9);
+    border-color: rgba(52, 211, 153, 0.2);
+}
+
+.page-observation .content-wrapper:hover {
+    border-color: rgba(52, 211, 153, 0.4);
+}
+
+.page-observation .quote {
+    background: rgba(16, 185, 129, 0.1);
+    border-left-color: #10b981;
+}
+
+.page-observation .quote-author {
+    color: #6ee7b7;
+}
+
+.page-observation .content-list strong {
+    color: #34d399;
+}
+
+.page-observation .nav-link.active { 
+    color: #34d399; 
+}
+
+.page-observation .nav-link:hover {
+    color: #34d399;
+}
+
+.page-observation .nav-link::after { 
+    background: #34d399; 
+}
+
+.page-observation .hero-cta { 
+    background: rgba(16, 185, 129, 0.2);
+    border-color: #10b981; 
+    color: #34d399; 
+}
+
+.page-observation .hero-cta:hover {
+    background: #10b981;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+}
+.page-observation .biblio-entry a:hover {
+    color: #34d399;
+    border-bottom-color: #34d399;
+}

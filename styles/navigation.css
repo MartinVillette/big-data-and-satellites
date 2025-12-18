@@ -1,0 +1,153 @@
+/* Navigation - Thème orange/ambre */
+
+@keyframes orbit-rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes marker-pulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.page-navigation .gps-orbits {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    margin-left: -400px;
+    margin-top: -400px;
+    border: 2px solid rgba(245, 158, 11, 0.1);
+    border-radius: 50%;
+    animation: orbit-rotation 60s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-navigation .gps-orbits::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -300px;
+    border: 2px solid rgba(245, 158, 11, 0.15);
+    border-radius: 50%;
+}
+
+.page-navigation .position-markers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(3px 3px at 25% 30%, rgba(245, 158, 11, 0.4), transparent),
+        radial-gradient(3px 3px at 75% 60%, rgba(251, 191, 36, 0.35), transparent),
+        radial-gradient(3px 3px at 50% 80%, rgba(253, 224, 71, 0.3), transparent);
+    background-size: 700px 700px;
+    animation: marker-pulse 4s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-navigation .hero {
+    background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.25) 0%, transparent 60%);
+}
+
+.page-navigation .hero-title {
+    background: linear-gradient(45deg, #f59e0b, #fbbf24, #fde047);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-navigation .nav-logo {
+    color: #fbbf24;
+}
+
+.page-navigation .nav-logo:hover {
+    color: #fde047;
+}
+
+.page-navigation .section-title { 
+    color: #fbbf24; 
+    border-bottom-color: rgba(251, 191, 36, 0.5); 
+}
+
+.page-navigation .subsection-title { 
+    color: #fde047; 
+}
+
+.page-navigation .highlight-box { 
+    background: rgba(245, 158, 11, 0.15); 
+    border-left-color: #f59e0b; 
+}
+
+.page-navigation .highlight-title {
+    color: #fbbf24;
+}
+
+.page-navigation .stat-card { 
+    background: rgba(245, 158, 11, 0.1); 
+    border-color: rgba(251, 191, 36, 0.3); 
+}
+
+.page-navigation .stat-card:hover {
+    border-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.2);
+}
+
+.page-navigation .content-wrapper {
+    background: rgba(30, 25, 15, 0.9);
+    border-color: rgba(251, 191, 36, 0.2);
+}
+
+.page-navigation .content-wrapper:hover {
+    border-color: rgba(251, 191, 36, 0.4);
+}
+
+.page-navigation .quote {
+    background: rgba(245, 158, 11, 0.1);
+    border-left-color: #f59e0b;
+}
+
+.page-navigation .quote-author {
+    color: #fde047;
+}
+
+.page-navigation .content-list strong {
+    color: #fbbf24;
+}
+
+.page-navigation .nav-link.active { 
+    color: #fbbf24; 
+}
+
+.page-navigation .nav-link:hover {
+    color: #fbbf24;
+}
+
+.page-navigation .nav-link::after { 
+    background: #fbbf24; 
+}
+
+.page-navigation .hero-cta { 
+    background: rgba(245, 158, 11, 0.2);
+    border-color: #f59e0b; 
+    color: #fbbf24; 
+}
+
+.page-navigation .hero-cta:hover {
+    background: #f59e0b;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(245, 158, 11, 0.4);
+}
+
+.page-navigation .biblio-entry a:hover {
+    color: #fbbf24;
+    border-bottom-color: #fbbf24;
+}

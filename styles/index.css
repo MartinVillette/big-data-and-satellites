@@ -1,0 +1,133 @@
+/* ===================================
+   STYLES SPÉCIFIQUES À INDEX.HTML
+   =================================== */
+
+/* Starfield animations */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+.page-index .stars,
+.page-index .stars2,
+.page-index .stars3 {
+    position: fixed;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+}
+
+.page-index .stars {
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(2px 2px at 60px 70px, white, transparent),
+        radial-gradient(1px 1px at 50px 50px, white, transparent),
+        radial-gradient(1px 1px at 130px 80px, white, transparent),
+        radial-gradient(2px 2px at 90px 10px, white, transparent),
+        radial-gradient(1px 1px at 180px 160px, white, transparent),
+        radial-gradient(2px 2px at 140px 120px, white, transparent);
+    background-size: 400px 400px;
+    background-repeat: repeat;
+    animation: twinkle 4s ease-in-out infinite;
+    z-index: 1;
+}
+
+.page-index .stars2 {
+    background-image: 
+        radial-gradient(1px 1px at 40px 60px, #fff, transparent),
+        radial-gradient(1px 1px at 110px 90px, #fff, transparent),
+        radial-gradient(1px 1px at 150px 30px, #fff, transparent),
+        radial-gradient(2px 2px at 180px 120px, #fff, transparent),
+        radial-gradient(1px 1px at 250px 200px, #fff, transparent),
+        radial-gradient(2px 2px at 320px 180px, #fff, transparent);
+    background-size: 500px 500px;
+    background-repeat: repeat;
+    animation: twinkle 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+.page-index .stars3 {
+    background-image: 
+        radial-gradient(1px 1px at 75px 125px, #fff, transparent),
+        radial-gradient(2px 2px at 100px 75px, #fff, transparent),
+        radial-gradient(1px 1px at 142px 100px, #fff, transparent),
+        radial-gradient(1px 1px at 170px 25px, #fff, transparent),
+        radial-gradient(1px 1px at 280px 220px, #fff, transparent),
+        radial-gradient(2px 2px at 350px 150px, #fff, transparent),
+        radial-gradient(1px 1px at 420px 280px, #fff, transparent);
+    background-size: 600px 600px;
+    background-repeat: repeat;
+    animation: twinkle 8s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Satellites */
+.page-index .satellite {
+    position: fixed;
+    transition: transform 0.1s ease-out;
+    filter: drop-shadow(0 0 20px rgba(74, 144, 226, 0.8));
+}
+
+.page-index .satellite img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.page-index .satellite-1 {
+    top: 35%;
+    left: 10%;
+}
+
+.page-index .satellite-1 img {
+    width: 300px;
+}
+
+.page-index .satellite-2 {
+    top: 45%;
+    left: 5%;
+}
+
+.page-index .satellite-2 img {
+    width: 100px;
+}
+
+.page-index .satellite-3 {
+    top: 75%;
+    right: 15%;
+    opacity: 0.7;
+}
+
+.page-index .satellite-3 img {
+    width: 90px;
+}
+
+/* Hero specific styling */
+.page-index .hero {
+    background: radial-gradient(ellipse at center, rgba(25, 25, 112, 0.4) 0%, transparent 70%);
+}
+
+.page-index .hero-title {
+    background: linear-gradient(45deg, #4a90e2, #67b5ff, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(74, 144, 226, 0.5);
+}
+
+.page-index .hero-subtitle {
+    color: #67b5ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-index .satellite img {
+        width: 60px !important;
+    }
+    
+    .page-index .satellite-1 img {
+        width: 80px !important;
+    }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Data Spatial - Télécommunications</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/telecom.css">
+</head>
+<body class="page-telecom">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Big Data Spatial</a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Introduction</a></li>
+                <li><a href="meteo.html" class="nav-link">Météorologie</a></li>
+                <li><a href="telecom.html" class="nav-link active">Télécommunications</a></li>
+                <li><a href="observation.html" class="nav-link">Observation Terre</a></li>
+                <li><a href="navigation.html" class="nav-link">Navigation</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="signal-waves"></div>
+    <div class="network-grid"></div>
+
+    <header class="hero">
+        <h1 class="hero-title">Télécommunications Spatiales</h1>
+        <p class="hero-subtitle">Connecter le Monde depuis l'Espace</p>
+        <a href="#definition" class="hero-cta">Explorer</a>
+    </header>
+
+    <!-- Définition Section -->
+    <section class="content-section" id="definition">
+        <div class="content-wrapper">
+            <h2 class="section-title">Définition & Principe</h2>
+            
+            <p class="section-text">La télécommunication par satellites (ou <strong>SatCom</strong>) est l'utilisation de satellites en orbite autour de la Terre pour relayer et échanger des informations (voix, données, vidéo) entre des émetteurs et des récepteurs situés sur Terre. C'est le seul moyen de communication accessible partout sur Terre, indépendamment des infrastructures terrestres.</p>
+
+            <p class="section-text">Les satellites agissent comme des répéteurs situés dans l'espace. Ils reçoivent et envoient les communications depuis et vers la Terre. Le processus se déroule en trois étapes :</p>
+
+            <ul class="content-list">
+                <li><strong>Uplink :</strong> la station au sol envoie le signal au satellite</li>
+                <li><strong>Traitement :</strong> Le satellite capte, change la fréquence et amplifie le signal</li>
+                <li><strong>Downlink :</strong> Le satellite retransmet le signal vers la Terre</li>
+            </ul>
+
+            <div class="image-container">
+                <img src="images/telecom-1.png" alt="Uplink et Downlink" class="content-image">
+                <p class="image-caption">Figure 1 : Uplink et Downlink (source Wikipedia Liaison montante)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Data Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Big Data & Satellites</h2>
+            
+            <h3 class="subsection-title">La nouvelle ressource</h3>
+            <p class="section-text">La valeur des SatCom ne réside plus uniquement dans la vente de spectre comme auparavant, mais dans la <strong>valorisation des flux massifs de données</strong> transitant par les satellites.</p>
+
+            <h3 class="subsection-title">Expansion du marché</h3>
+            <p class="section-text">Catalysé par la création de constellations telles que StarLink, le marché mondial des communications par satellite est en considérable augmentation, avec des projections évaluant l'écosystème global à plus de <span class="stat-inline">150 milliards de dollars d'ici 2030</span> (~18% d'évolution/an contre 5% sur Terre).</p>
+
+            <div class="image-container">
+                <img src="images/telecom-2.png" alt="Évolution du marché SatCom" class="content-image">
+                <p class="image-caption">Figure 2 : Grand View Research (Satellite Communication Market 2025-2030)</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Convergence</h3>
+                <p class="section-text">L'intégration des réseaux de communication par satellites dans les réseaux de communication standards transforme l'espace en une extension du Big Data terrestre vers des zones non-connectées auparavant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Technologies Spécifiques</h2>
+            
+            <h3 class="subsection-title">Orbites</h3>
+            <p class="section-text">Trois grands types d'orbites existent et sont déterminés par les exigences de latences, de couverture et d'accessibilité.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">LEO</span>
+                    <span class="stat-label">300-2000 km</span>
+                    <span class="stat-label">Latence : 20-40 ms</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">MEO</span>
+                    <span class="stat-label">2000-35000 km</span>
+                    <span class="stat-label">Latence : ~150 ms</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">GEO</span>
+                    <span class="stat-label">35,786 km</span>
+                    <span class="stat-label">Latence : ~600 ms</span>
+                </div>
+            </div>
+
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">LEO (Low Earth Orbit)</h4>
+                    <ul class="content-list">
+                        <li>Altitude : 300 – 2 000 km</li>
+                        <li>Latence faible (20–40 ms)</li>
+                        <li>Milliers de satellites requis</li>
+                        <li>Applications : Edge Computing, 5G, Web, Starlink</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">GEO (Geostationary Orbit)</h4>
+                    <ul class="content-list">
+                        <li>Altitude : 35 786 km</li>
+                        <li>Latence élevée (~600 ms)</li>
+                        <li>3 satellites pour couverture globale</li>
+                        <li>Applications : TV, Météo globale, Back-up</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="images/telecom-3.png" alt="Classification des orbites" class="content-image">
+                <p class="image-caption">Figure 3 : Classification des différentes altitudes d'orbites terrestres (Encyclopédie Universalis)</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Disruption LEO</h3>
+                <p class="section-text">La LEO représente une disruption technologique majeure, son appropriation par des constellations de satellites permet le transfert de larges quantités de données avec une faible latence.</p>
+            </div>
+
+            <h3 class="subsection-title">Liaisons : Comment les données voyagent-elles à des débits de plusieurs Gbps ?</h3>
+            
+            <h4 class="column-title">Liaisons Optiques Inter-Satellites (OISL / Lasers)</h4>
+            <p class="section-text">Le <strong>"Mesh Network"</strong> (réseau maillé) est la véritable révolution. Au lieu de renvoyer les données immédiatement au sol, les satellites se parlent entre eux via des lasers.</p>
+            
+            <ul class="content-list">
+                <li><strong>Technologie :</strong> Utilisation de faisceaux laser infrarouges pour transmettre des données dans le vide</li>
+                <li><strong>Avantages :</strong> La lumière voyage plus vite dans le vide que dans la fibre optique. Cela crée un réseau mondial ultra-rapide indépendant des câbles sous-marins</li>
+                <li><strong>Performance :</strong> Les liaisons actuelles atteignent jusqu'à 100-200 Gbps par lien laser</li>
+            </ul>
+
+            <h4 class="column-title">Liaison Terre-Satellites (Bandes de Fréquences Haut Débit)</h4>
+            <p class="section-text">Pour faire passer toujours plus de données toujours plus rapidement, les communications passent sur des fréquences plus hautes. Ce sont les <strong>bandes Q, V et E (70-80 GHz)</strong>. Ces fréquences offrent des bandes passantes immenses au réseau central, bien qu'elles soient plus sensibles aux conditions extérieures.</p>
+
+            <h3 class="subsection-title">Gestion par Machine Learning et IA</h3>
+            <p class="section-text">Le ML intervient à trois niveaux dans la gestion des SatCom :</p>
+
+            <h4 class="column-title">A. Gestion du Trafic et "Beam Hopping" (Saut de Faisceau)</h4>
+            <p class="section-text">Les satellites utilisent l'IA pour analyser la demande de données en temps réel et déplacer dynamiquement leurs faisceaux afin de concentrer la capacité là où elle est nécessaire, optimisant ainsi l'énergie et le débit.</p>
+
+            <h4 class="column-title">B. Maintenance prédictive</h4>
+            <p class="section-text">Des modèles de ML analysent la télémétrie des satellites afin de détecter des anomalies précoces et prédire automatiquement les défaillances.</p>
+
+            <h4 class="column-title">C. Classification du trafic chiffré</h4>
+            <p class="section-text">Les traces des transferts (même cryptés) permettent de déterminer le type de contenu transféré et d'adapter le comportement du satellite.</p>
+        </div>
+    </section>
+
+    <!-- Défis Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Défis Technologiques</h2>
+            
+            <h3 class="subsection-title">Gestion des ressources limitées</h3>
+            <p class="section-text">Le spectre électromagnétique et la place dans l'espace constituent des ressources finies et nécessitent une régulation stricte. Pour les satellites en LEO, le plus grand défi réside dans l'allocation de bandes de fréquences pour éviter les interférences. Pour les satellites en GEO, la limite réside principalement dans le nombre physique d'emplacements disponibles.</p>
+
+            <h3 class="subsection-title">Défis économiques et modèle du « coût par bit »</h3>
+            <p class="section-text">Les constellations LEO type StarLink ont réduit le coût de fabrication et de maintenance grâce à la production de masse, mais elles doivent compenser un revenu par utilisateur très faible.</p>
+            <p class="section-text">La viabilité repose donc sur l'échelle, l'optimisation des performances et la transition de la vente de capacité brute vers des services à valeur ajoutée.</p>
+
+            <h3 class="subsection-title">Cybersécurité & Souveraineté</h3>
+            <p class="section-text">Les SatCom sont sujettes à des attaques sur l'ensemble de la chaîne : (1) sol, (2) segment spatial, (3) liaisons inter-satellites et (4) terminaux utilisateurs avec des risques critiques tels que le brouillage, l'usurpation de signaux ou l'injection de fausses données.</p>
+            
+            <p class="section-text">Les incidents récents ont accéléré l'adoption d'architectures Zero Trust, de mécanismes de chiffrement avancés et de cadres réglementaires renforçant les exigences de cybersécurité dans l'espace.</p>
+
+            <div class="image-container">
+                <img src="images/telecom-4.png" alt="Cybersécurité et souveraineté" class="content-image">
+                <p class="image-caption">Figure 4 : Enjeux de cybersécurité et souveraineté des données</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Souveraineté des données</h3>
+                <p class="section-text">Bien que les satellites opèrent à l'échelle mondiale, les données qu'ils transportent restent soumises aux législations nationales. Les exigences de souveraineté des données (ex. RGPD) et les droits d'atterrissage imposés par les États fragmentent l'architecture des réseaux satellitaires, remettant en question la possibilité d'un traitement totalement transparent des données à l'échelle mondiale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Futur Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Le Futur & R&D</h2>
+            
+            <h3 class="subsection-title">Unification des réseaux : vers un réseau 3D</h3>
+            <p class="section-text">La <strong>6G</strong> intégrera nativement les satellites au cœur des réseaux de télécommunication, au sein d'une architecture tridimensionnelle combinant segments terrestre, aérien et spatial.</p>
+            <p class="section-text">Cette convergence permettra une connectivité multimodale, avec des basculements entre sol et espace, gérés par l'IA, ouvrant la voie à des applications Big Data globales et autonomes.</p>
+
+            <h3 class="subsection-title">Zoom technologique : Chiffrement quantique et QKD</h3>
+            <p class="section-text">Face aux limites du chiffrement classique à l'ère du calcul quantique, les satellites constituent une solution pour la <strong>distribution de clés quantiques (QKD)</strong>.</p>
+
+            <div class="image-container">
+                <img src="images/telecom-5.png" alt="Quantum Key Distribution" class="content-image">
+                <p class="image-caption">Figure 5 : Distribution de clés quantiques par satellite</p>
+            </div>
+
+            <p class="section-text">En exploitant les propriétés physiques des photons dans le vide spatial, des projets comme <strong>EAGLE-1 (ESA)</strong> développé par l'Europe visent à fournir un niveau de sécurité quasi absolu pour les flux de données critiques à l'échelle mondiale.</p>
+
+            <h3 class="subsection-title">Intégration de la puissance de calcul en orbite</h3>
+            <p class="section-text">La R&D converge vers le déploiement de capacités de calcul directement à bord des satellites.</p>
+            <p class="section-text">Ce <strong>cloud spatial</strong> permet de traiter et filtrer les données en orbite, réduisant les besoins de transmission et transformant les satellites en systèmes intelligents, autonomes et orientés information plutôt que données brutes.</p>
+
+            <blockquote class="quote">
+                "L'espace devient non seulement un relais de communication, mais un véritable centre de traitement de l'information distribuée."
+                <cite class="quote-author">— Vision 6G spatiale</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Références Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Références</h2>
+            <div class="bibliography">
+                <p class="biblio-entry">
+                    <strong>[1]</strong> "OISL Vs RF Links: Exploring Technologies for Satcom Constellations"
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[2]</strong> Tiwari, Gayatri. (2020). "A Review on Inter-Satellite Links Free Space Optical Communication." <em>Indian Journal of Science and Technology</em>. 13. 712-724. 
+                    <a href="https://doi.org/10.17485/ijst/2020/v13i06/147998" target="_blank" rel="noopener noreferrer">10.17485/ijst/2020/v13i06/147998</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[3]</strong> "Very High Throughput Satellites (V/HTS): Technology, Challenges, and Future Systems"
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[4]</strong> Xia Xie, Kexin Fan, Wenfeng Deng, Nikolaos Pappas, Qinyu Zhang. "Very High Throughput Satellites (V/HTS): Technology, Challenges, and Future Systems."
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[5]</strong> ENEA. "Intelligent Connection of Users, Apps & Network Data."
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[6]</strong> Veronica R. Glick and al. "Securing the Final Frontier: Cybersecurity Risk, Regulation, and Compliance Trends in Space and Satellite Operations."
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[7]</strong> ESA. "Eagle-1." 
+                    <a href="https://www.esa.int/Applications/Connectivity_and_Secure_Communications/Eagle-1" target="_blank" rel="noopener noreferrer">www.esa.int/Applications/Connectivity_and_Secure_Communications/Eagle-1</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[8]</strong> Hafez Ahmad, and Shakila Islam Jhara. "AI-Driven Approaches for Real-Time Satellite Data Processing and Analysis." 
+                    <a href="https://assets.science.nasa.gov/content/dam/science/cds/science-enabling-technology/events/2025/accelerating-informatics/PM_6_Ahmad.pdf" target="_blank" rel="noopener noreferrer">NASA Science Enabling Technology</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* Défense - Thème rouge/militaire */
+
+@keyframes radar-scan {
+    0% { transform: rotate(0deg); opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { transform: rotate(360deg); opacity: 0.3; }
+}
+
+@keyframes tactical-grid {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.4; }
+}
+
+.page-defense .radar-sweep {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -500px;
+    margin-top: -500px;
+    background: conic-gradient(
+        from 0deg at 50% 50%,
+        transparent 0deg,
+        rgba(239, 68, 68, 0.2) 30deg,
+        rgba(239, 68, 68, 0.4) 60deg,
+        rgba(239, 68, 68, 0.2) 90deg,
+        transparent 120deg
+    );
+    border-radius: 50%;
+    animation: radar-scan 8s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-defense .tactical-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(239, 68, 68, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(239, 68, 68, 0.15) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: tactical-grid 3s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-defense .hero {
+    background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.25) 0%, transparent 60%);
+}
+
+.page-defense .hero-title {
+    background: linear-gradient(45deg, #ef4444, #f87171, #fca5a5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-defense .nav-logo {
+    color: #f87171;
+}
+
+.page-defense .nav-logo:hover {
+    color: #fca5a5;
+}
+
+.page-defense .section-title { 
+    color: #f87171; 
+    border-bottom-color: rgba(248, 113, 113, 0.5); 
+}
+
+.page-defense .subsection-title { 
+    color: #fca5a5; 
+}
+
+.page-defense .highlight-box { 
+    background: rgba(239, 68, 68, 0.15); 
+    border-left-color: #ef4444; 
+}
+
+.page-defense .highlight-title {
+    color: #f87171;
+}
+
+.page-defense .stat-card { 
+    background: rgba(239, 68, 68, 0.1); 
+    border-color: rgba(248, 113, 113, 0.3); 
+}
+
+.page-defense .stat-card:hover {
+    border-color: #ef4444;
+    background: rgba(239, 68, 68, 0.2);
+}
+
+.page-defense .content-wrapper {
+    background: rgba(30, 15, 15, 0.9);
+    border-color: rgba(248, 113, 113, 0.2);
+}
+
+.page-defense .content-wrapper:hover {
+    border-color: rgba(248, 113, 113, 0.4);
+}
+
+.page-defense .quote {
+    background: rgba(239, 68, 68, 0.1);
+    border-left-color: #ef4444;
+}
+
+.page-defense .quote-author {
+    color: #fca5a5;
+}
+
+.page-defense .content-list strong {
+    color: #f87171;
+}
+
+.page-defense .nav-link.active { 
+    color: #f87171; 
+}
+
+.page-defense .nav-link:hover {
+    color: #f87171;
+}
+
+.page-defense .nav-link::after { 
+    background: #f87171; 
+}
+
+.page-defense .hero-cta { 
+    background: rgba(239, 68, 68, 0.2);
+    border-color: #ef4444; 
+    color: #f87171; 
+}
+
+.page-defense .hero-cta:hover {
+    background: #ef4444;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.4);
+}

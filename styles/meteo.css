@@ -1,0 +1,143 @@
+/* Météorologie - Thème bleu clair/ciel */
+
+@keyframes float {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(20px) translateY(-10px); }
+}
+
+@keyframes drift {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.page-meteo .clouds-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse at 20% 30%, rgba(100, 150, 200, 0.15), transparent),
+        radial-gradient(ellipse at 70% 60%, rgba(120, 160, 210, 0.1), transparent),
+        radial-gradient(ellipse at 40% 80%, rgba(90, 140, 190, 0.12), transparent);
+    animation: float 20s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-meteo .weather-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 15% 25%, rgba(150, 200, 255, 0.4), transparent),
+        radial-gradient(3px 3px at 45% 55%, rgba(130, 180, 235, 0.3), transparent),
+        radial-gradient(2px 2px at 75% 35%, rgba(140, 190, 245, 0.35), transparent);
+    background-size: 800px 800px;
+    background-repeat: repeat;
+    animation: drift 60s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-meteo .hero {
+    background: 
+        radial-gradient(ellipse at center, rgba(50, 100, 180, 0.3) 0%, transparent 60%),
+        radial-gradient(ellipse at 30% 40%, rgba(70, 120, 200, 0.2) 0%, transparent 50%);
+}
+
+.page-meteo .hero-title {
+    background: linear-gradient(45deg, #4a90e2, #70c0ff, #a0d5ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-meteo .nav-logo {
+    color: #70c0ff;
+}
+
+.page-meteo .nav-logo:hover {
+    color: #a0d5ff;
+}
+
+.page-meteo .section-title { 
+    color: #70c0ff; 
+    border-bottom-color: rgba(112, 192, 255, 0.5); 
+}
+
+.page-meteo .subsection-title { 
+    color: #a0d5ff; 
+}
+
+.page-meteo .highlight-box { 
+    background: rgba(70, 120, 200, 0.15); 
+    border-left-color: #5080c0; 
+}
+
+.page-meteo .highlight-title {
+    color: #70c0ff;
+}
+
+.page-meteo .stat-card { 
+    background: rgba(70, 120, 200, 0.1); 
+    border-color: rgba(112, 192, 255, 0.3); 
+}
+
+.page-meteo .stat-card:hover {
+    border-color: #5080c0;
+    background: rgba(70, 120, 200, 0.2);
+}
+
+.page-meteo .content-wrapper {
+    background: rgba(15, 25, 45, 0.9);
+    border-color: rgba(112, 192, 255, 0.2);
+}
+
+.page-meteo .content-wrapper:hover {
+    border-color: rgba(112, 192, 255, 0.4);
+}
+
+.page-meteo .quote {
+    background: rgba(70, 120, 200, 0.1);
+    border-left-color: #5080c0;
+}
+
+.page-meteo .quote-author {
+    color: #a0d5ff;
+}
+
+.page-meteo .content-list strong {
+    color: #70c0ff;
+}
+
+.page-meteo .nav-link.active { 
+    color: #70c0ff; 
+}
+
+.page-meteo .nav-link:hover {
+    color: #70c0ff;
+}
+
+.page-meteo .nav-link::after { 
+    background: #70c0ff; 
+}
+
+.page-meteo .hero-cta { 
+    background: rgba(80, 128, 192, 0.2);
+    border-color: #5080c0; 
+    color: #70c0ff; 
+}
+
+.page-meteo .hero-cta:hover {
+    background: #5080c0;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(80, 128, 192, 0.4);
+}
+
+.page-meteo .biblio-entry a:hover {
+    color: #70c0ff;
+    border-bottom-color: #70c0ff;
+}
