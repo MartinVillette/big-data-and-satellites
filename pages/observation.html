@@ -31,27 +31,162 @@
 
     <header class="hero">
         <h1 class="hero-title">Observation de la Terre</h1>
-        <p class="hero-subtitle">Agriculture, Océanographie & Cartographie</p>
-        <a href="#applications" class="hero-cta">Explorer</a>
+        <p class="hero-subtitle">De la Science à l'Infrastructure Numérique Mondiale</p>
+        <a href="#context" class="hero-cta">Explorer</a>
     </header>
 
+    <!-- Context Section -->
+    <section class="content-section" id="context">
+        <div class="content-wrapper">
+            <h2 class="section-title">Une Mutation Historique</h2>
+            
+            <p class="section-text">L'Observation de la Terre (EO) traverse actuellement une mutation historique, passant d'une discipline scientifique réservée à une élite gouvernementale à une <strong>composante névralgique de l'infrastructure numérique mondiale</strong>. Ce changement de paradigme est alimenté par la convergence de deux forces technologiques majeures : la multiplication exponentielle des capteurs en orbite et l'émergence des capacités de traitement massivement parallèles, communément désignées sous le terme de Big Data.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">6.35 Mds $</span>
+                    <span class="stat-label">Marché EO 2024</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">12.65 Mds $</span>
+                    <span class="stat-label">Projection 2032</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8.73%</span>
+                    <span class="stat-label">CAGR annuel</span>
+                </div>
+            </div>
+
+            <p class="section-text">Cette expansion économique ne reflète pas seulement une augmentation quantitative des données, mais une <strong>transformation qualitative de leur exploitation</strong>. Alors que les gouvernements et les agences de défense demeurent des acteurs prépondérants, représentant environ deux tiers du marché, l'intégration des données spatiales dans les processus décisionnels commerciaux - de l'agriculture de précision à la réassurance - s'accélère.</p>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">L'Infrastructure : Du "Stockage" au "Jumeau Numérique"</h2>
+            
+            <p class="section-text">Le modèle traditionnel de téléchargement d'images est obsolète face aux pétaoctets générés par des programmes comme Copernicus. L'industrie a basculé vers le <strong>traitement cloud</strong>.</p>
+
+            <h3 class="subsection-title">L'Écosystème "Code-to-Data"</h3>
+            <p class="section-text">Au lieu de déplacer les données, ce sont les algorithmes qui se déplacent. Le <strong>Copernicus Data Space Ecosystem (CDSE)</strong> permet d'exécuter des calculs directement sur les serveurs où sont stockées les archives Sentinel, éliminant les délais de transfert.</p>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Paradigme Shift : Legacy vs Cloud Native</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Caractéristique</th>
+                            <th>Modèle Traditionnel</th>
+                            <th>Modèle Cloud Native (DIAS)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Localisation</strong></td>
+                            <td>Stockage local (NAS/SAN)</td>
+                            <td>Cloud Data Lake / Object Storage</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Accès</strong></td>
+                            <td>Téléchargement de fichiers</td>
+                            <td>API, Streaming, Requêtes spatiotemporelles</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Traitement</strong></td>
+                            <td>Séquentiel sur Desktop GIS</td>
+                            <td>Parallèle distribué (Serverless, Kubernetes, Dask)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Latence</strong></td>
+                            <td>Élevée (bande passante réseau)</td>
+                            <td>Faible (traitement in-situ)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Modèle Économique</strong></td>
+                            <td>CAPEX (Serveurs)</td>
+                            <td>OPEX (Paiement à l'usage)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-title">Le Data Cube : Structure Multidimensionnelle</h3>
+            <p class="section-text">Cette innovation structure les données non plus comme une pile de fichiers images (2D), mais comme une <strong>matrice multidimensionnelle (3D : Latitude, Longitude, Temps)</strong>. Cela permet d'extraire l'historique temporel d'une parcelle agricole en quelques millisecondes, sans avoir à traiter des milliers de scènes individuelles.</p>
+
+            <h3 class="subsection-title">Destination Earth (DestinE) : Le Jumeau Numérique</h3>
+            <p class="section-text">L'Europe construit un <strong>"Jumeau Numérique"</strong> de la Terre. Ce modèle fusionne en temps réel les observations satellitaires et les simulateurs climatiques pour prédire les catastrophes naturelles avec une précision inédite.</p>
+
+            <div class="image-container">
+                <img src="../images/observation-1.png" alt="Destination Earth Digital Twin" class="content-image">
+                <p class="image-caption">Figure 1 : Architecture du jumeau numérique Destination Earth</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Technologies Clés : Voir Mieux et Plus Vite</h2>
+            
+            <p class="section-text">L'augmentation de la résolution des capteurs crée un défi de volume massif.</p>
+
+            <h3 class="subsection-title">Le Défi Hyperspectral (Mission CHIME)</h3>
+            <p class="section-text">Alors qu'un satellite classique voit en ~10 couleurs, un capteur hyperspectral en voit <strong>des centaines</strong>. La future mission <strong>CHIME</strong> générera plus de <strong>4,5 Gigabits de données par seconde</strong>, saturant les capacités de transmission vers le sol.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">4.5 Gbps</span>
+                    <span class="stat-label">Débit CHIME</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">~100</span>
+                    <span class="stat-label">Bandes spectrales</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">30 m</span>
+                    <span class="stat-label">Résolution spatiale</span>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Edge AI : Intelligence en Orbite</h3>
+            <p class="section-text">Pour gérer ce flux, des satellites comme <strong>Phi-Sat-2</strong> embarquent des puces d'IA (Intel Movidius) directement à bord.</p>
+
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">Filtrage Intelligent</h4>
+                    <p class="section-text">L'IA détecte les nuages (qui couvrent souvent 70% des images) et les supprime avant l'envoi, réduisant drastiquement le volume de données transmises.</p>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">Alerte Directe</h4>
+                    <p class="section-text">Le satellite peut détecter un navire ou un feu et envoyer l'alerte immédiatement, sans envoyer l'image lourde au sol.</p>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="../images/observation-2.png" alt="Phi-Sat-2 Edge AI" class="content-image">
+                <p class="image-caption">Figure 2 : Architecture Edge AI de Phi-Sat-2</p>
+            </div>
+
+            <blockquote class="quote">
+                "The Φ-Sat-1 Mission demonstrated for the first time on-board deep neural network inference for satellite Earth observation, paving the way for intelligent satellites."
+                <cite class="quote-author">— Giuffrida et al. (2021), IEEE Transactions on Geoscience and Remote Sensing</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
     <section class="content-section" id="applications">
         <div class="content-wrapper">
-            <h2 class="section-title">Domaines d'Applications</h2>
+            <h2 class="section-title">Applications Sectorielles : De la Donnée à la Décision</h2>
             
-            <h3 class="subsection-title">Agriculture de Précision</h3>
-            <p class="section-text"></p>
+            <h3 class="subsection-title">Agriculture de Précision : Séries Temporelles NDVI</h3>
+            <p class="section-text">L'analyse de séries temporelles d'images (tous les 5 jours avec Sentinel-2) permet de calculer le <strong>NDVI (Indice de Végétation)</strong>. Des systèmes comme <strong>Sen2-Agri</strong> utilisent ces courbes pour identifier automatiquement le type de culture (blé, maïs, soja) à l'échelle d'un pays et prédire les rendements avant la récolte.</p>
 
             <div class="highlight-box">
                 <h3 class="highlight-title">NDVI et Indices de Végétation</h3>
-                <p class="section-text"></p>
+                <p class="section-text">Le NDVI (Normalized Difference Vegetation Index) mesure la "verdeur" de la végétation en comparant la réflectance dans le rouge et le proche infrarouge. Un NDVI élevé (0.6-0.9) indique une végétation dense et saine.</p>
             </div>
-
-            <h3 class="subsection-title">Océanographie</h3>
-            <p class="section-text"></p>
-
-            <h3 class="subsection-title">Cartographie et Urbanisme</h3>
-            <p class="section-text"></p>
 
             <div class="stats-grid">
                 <div class="stat-card">
@@ -67,78 +202,170 @@
                     <span class="stat-label">Revisite</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="content-section">
-        <div class="content-wrapper">
-            <h2 class="section-title">Technologies Spécifiques</h2>
-            
-            <h3 class="subsection-title">Hardware : Capteurs Optiques Multi-spectraux</h3>
-            <p class="section-text"></p>
+            <h3 class="subsection-title">Océanographie : L'Altimétrie Côtière</h3>
+            <p class="section-text">La mission <strong>Sentinel-6</strong> mesure la hauteur des océans au millimètre près. Le défi est la zone côtière, où le signal radar est "pollué" par la terre. De nouveaux algorithmes de <strong>"retracking"</strong> (retraitement de l'onde radar) permettent désormais de surveiller la montée des eaux au plus près des villes côtières.</p>
+
+            <div class="image-container">
+                <img src="../images/observation-3.png" alt="Altimétrie côtière Sentinel-6" class="content-image">
+                <p class="image-caption">Figure 3 : Altimétrie radar côtière avec retracking avancé</p>
+            </div>
+
+            <h3 class="subsection-title">Cartographie 3D Urbaine</h3>
+            <p class="section-text">En utilisant des images stéréo prises depuis l'espace sous différents angles, on peut reconstruire des <strong>modèles 3D des villes</strong>. L'IA (Segmentation Sémantique) est ensuite utilisée pour classer automatiquement chaque volume : bâtiment, route ou végétation, facilitant le déploiement de la 5G et l'urbanisme.</p>
 
             <div class="two-column">
                 <div class="column">
-                    <h4 class="column-title">Optique</h4>
+                    <h4 class="column-title">Stéréo-Photogrammétrie</h4>
                     <ul class="content-list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Images multi-angles depuis l'orbite</li>
+                        <li>Reconstruction 3D automatisée</li>
+                        <li>Modèles Numériques de Surface (DSM)</li>
                     </ul>
                 </div>
                 <div class="column">
-                    <h4 class="column-title">Radar SAR</h4>
+                    <h4 class="column-title">Segmentation IA</h4>
                     <ul class="content-list">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Classification pixel par pixel</li>
+                        <li>Détection de bâtiments, routes, végétation</li>
+                        <li>Support pour planification urbaine</li>
                     </ul>
                 </div>
             </div>
-
-            <h3 class="subsection-title">Software : Traitement d'Images</h3>
-            <p class="section-text"></p>
-
-            <h3 class="subsection-title">Machine Learning : Segmentation Sémantique</h3>
-            <p class="section-text"></p>
         </div>
     </section>
 
+    <!-- Challenges Section -->
     <section class="content-section">
         <div class="content-wrapper">
             <h2 class="section-title">Défis Technologiques</h2>
             
             <h3 class="subsection-title">Couverture Nuageuse</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Les nuages couvrent en moyenne <strong>70% de la surface terrestre</strong> à tout instant, rendant l'imagerie optique inutilisable. Les solutions incluent :</p>
+            <ul class="content-list">
+                <li><strong>Fusion optique-radar :</strong> Les radars SAR voient à travers les nuages</li>
+                <li><strong>Détection automatique de nuages :</strong> Algorithmes de classification spectrale</li>
+                <li><strong>Composite temporel :</strong> Fusion de plusieurs passages pour obtenir une image sans nuages</li>
+            </ul>
 
             <h3 class="subsection-title">Fusion Multi-capteurs</h3>
-            <p class="section-text"></p>
+            <p class="section-text">L'intégration de données provenant de capteurs différents (optique, radar, thermique) avec des résolutions et des formats variés nécessite des algorithmes sophistiqués de co-registration et de normalisation radiométrique.</p>
 
             <h3 class="subsection-title">Valorisation à Grande Échelle</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Le passage de l'analyse expérimentale à l'exploitation opérationnelle à l'échelle continentale nécessite des infrastructures de calcul massives et des pipelines de traitement automatisés capables de traiter des dizaines de téraoctets par jour.</p>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Deep Learning in Remote Sensing</h3>
+                <p class="section-text">L'application du Deep Learning à la télédétection a révolutionné la classification d'images, la détection d'objets et la segmentation sémantique, permettant une exploitation automatisée à grande échelle des archives satellitaires.</p>
+            </div>
         </div>
     </section>
 
+    <!-- Future Section -->
     <section class="content-section">
         <div class="content-wrapper">
             <h2 class="section-title">Le Futur & R&D</h2>
             
             <h3 class="subsection-title">Hyperspectral Imaging</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Les futures missions hyperspectrales comme <strong>CHIME</strong> et <strong>EnMAP</strong> fourniront des centaines de bandes spectrales, permettant l'identification précise de minéraux, de types de végétation et de polluants. Le défi réside dans le traitement et la transmission de ces volumes de données massifs.</p>
 
             <h3 class="subsection-title">IA Edge Computing</h3>
-            <p class="section-text"></p>
+            <p class="section-text">L'intégration de capacités de traitement IA directement à bord des satellites transformera ces derniers en <strong>systèmes intelligents autonomes</strong>, capables de prendre des décisions en orbite sans intervention au sol.</p>
+
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">Avantages</h4>
+                    <ul class="content-list">
+                        <li>Réduction drastique des volumes de downlink</li>
+                        <li>Alertes en temps quasi-réel</li>
+                        <li>Optimisation de l'utilisation de la bande passante</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">Applications</h4>
+                    <ul class="content-list">
+                        <li>Détection de feux de forêt</li>
+                        <li>Surveillance maritime (navires illégaux)</li>
+                        <li>Détection d'inondations</li>
+                    </ul>
+                </div>
+            </div>
 
             <h3 class="subsection-title">Digital Twins de la Terre</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Les projets comme <strong>Destination Earth</strong> visent à créer des répliques virtuelles complètes de notre planète, fusionnant observations temps réel, modèles physiques et simulations IA pour permettre des prédictions et des scénarios "what-if" interactifs à l'échelle planétaire.</p>
+
+            <blockquote class="quote">
+                "Earth system data cubes unravel global multivariate dynamics, enabling unprecedented insights into climate, ecosystem, and human-environment interactions."
+                <cite class="quote-author">— Mahecha et al. (2020), Earth System Dynamics</cite>
+            </blockquote>
         </div>
     </section>
 
+    <!-- References Section -->
     <section class="content-section">
         <div class="content-wrapper">
             <h2 class="section-title">Références</h2>
             <div class="bibliography">
-                <p class="biblio-entry"></p>
+                <p class="biblio-entry">
+                    <strong>[1]</strong> Dehnavi, S.; Maghsoudi, Y.; Zakšek, K.; Valadan Zoej, M.J.; Seckmeyer, G.; Skripachev, V. (2020). "Cloud Detection Based on High Resolution Stereo Pairs of the Geostationary Meteosat Images." <em>Remote Sensing</em>, 12, 371. 
+                    <a href="https://doi.org/10.3390/rs12030371" target="_blank" rel="noopener noreferrer">DOI:10.3390/rs12030371</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[2]</strong> Kopp, S., et al. (2019). "Earth Observation Open Science: Enhancing Reproducible Science Using Data Cubes." <em>Data</em>, 4(4).
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[3]</strong> Commission Européenne. (2022). "Destination Earth (DestinE): A flagship initiative to develop a digital twin of the Earth." <em>Digital Strategy</em>.
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[4]</strong> T-Systems. (2023). "Copernicus Data Space Ecosystem: One of the World's largest Data collections to observe our planet." <em>Communiqué de presse</em>.
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[5]</strong> Mahecha, M. D., et al. (2020). "Earth system data cubes unravel global multivariate dynamics." <em>Earth System Dynamics</em>, 11, pp. 201–234.
+                    <a href="https://doi.org/10.5194/esd-11-201-2020" target="_blank" rel="noopener noreferrer">DOI:10.5194/esd-11-201-2020</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[6]</strong> Giuffrida, G., et al. (2021). "The Φ-Sat-1 Mission: The First On-Board Deep Neural Network Demonstrator for Satellite Earth Observation." <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 60, pp. 1-14.
+                    <a href="https://doi.org/10.1109/TGRS.2021.3125567" target="_blank" rel="noopener noreferrer">DOI:10.1109/TGRS.2021.3125567</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[7]</strong> Thales Alenia Space. (2024). "CHIME development for hyperspectral imaging: Overcoming data volume and processing challenges." <em>Présenté à SPIE Sensors + Imaging</em>.
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[8]</strong> Zhu, X. X., et al. (2017). "Deep Learning in Remote Sensing: A Comprehensive Review and List of Resources." <em>IEEE Geoscience and Remote Sensing Magazine</em>, 5(4), pp. 8-36.
+                    <a href="https://doi.org/10.1109/MGRS.2017.2762307" target="_blank" rel="noopener noreferrer">DOI:10.1109/MGRS.2017.2762307</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[9]</strong> ESA. (2024). "Φ-Sat-2: AI-Enabled Onboard Edge Computing for Satellite Intelligence." <em>Agence Spatiale Européenne</em>.
+                    <a href="https://www.esa.int/Applications/Observing_the_Earth/Phi-sat" target="_blank" rel="noopener noreferrer">www.esa.int</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[10]</strong> Defourny, P., et al. (2019). "Near real-time agriculture monitoring at national scale at parcel resolution: Performance assessment of the Sen2-Agri automated system." <em>Remote Sensing of Environment</em>, 221, pp. 551-568.
+                    <a href="https://doi.org/10.1016/j.rse.2018.11.007" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.rse.2018.11.007</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[11]</strong> Li, Z., et al. (2025). "SatSkylines: City-Scale 3D Reconstruction from Satellite Imagery." <em>arXiv preprint</em>, arXiv:2512.07527.
+                    <a href="https://arxiv.org/abs/2512.07527" target="_blank" rel="noopener noreferrer">arXiv:2512.07527</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[12]</strong> NASA/JPL. (2025). "Sentinel-6 Michael Freilich Reprocessed Altimetry Datasets Released." <em>NASA Earthdata</em>.
+                    <a href="https://www.earthdata.nasa.gov/" target="_blank" rel="noopener noreferrer">www.earthdata.nasa.gov</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[13]</strong> Passaro, M., et al. (2021). "Coastal Altimetry: Retracking and Waveform Classification Strategies." In <em>Coastal Altimetry</em>, Springer, pp. 20-55.
+                    <a href="https://doi.org/10.1007/978-3-030-24568-9_2" target="_blank" rel="noopener noreferrer">DOI:10.1007/978-3-030-24568-9_2</a>
+                </p>
             </div>
         </div>
     </section>

@@ -141,3 +141,38 @@
     color: #70c0ff;
     border-bottom-color: #70c0ff;
 }
+
+/* ...existing code... */
+
+/* Video Styling */
+.video-container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.content-video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(74, 144, 226, 0.3);
+    background: #000;
+}
+
+.content-video:focus {
+    outline: 2px solid rgba(74, 144, 226, 0.5);
+    outline-offset: 2px;
+}
+
+/* Page-specific video borders */
+.page-meteo .content-video {
+    border-color: rgba(112, 192, 255, 0.3);
+}
+
+.page-telecom .content-video {
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+.page-observation .content-video {
+    border-color: rgba(52, 211, 153, 0.3);
+}
