@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Data Spatial - Navigation</title>
+    <title>Big Data Spatial - Navigation GNSS</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/navigation.css">
 </head>
@@ -30,94 +30,248 @@
     <div class="position-markers"></div>
 
     <header class="hero">
-        <h1 class="hero-title">Systèmes de Navigation</h1>
-        <p class="hero-subtitle">GPS, Galileo & Positionnement Global</p>
-        <a href="#applications" class="hero-cta">Explorer</a>
+        <h1 class="hero-title">Navigation GNSS</h1>
+        <p class="hero-subtitle">La Précision Décimétrique à l'Ère du Big Data</p>
+        <a href="#context" class="hero-cta">Explorer</a>
     </header>
 
-    <section class="content-section" id="applications">
+    <!-- Context Section -->
+    <section class="content-section" id="context">
         <div class="content-wrapper">
-            <h2 class="section-title">Domaines d'Applications</h2>
+            <h2 class="section-title">De l'Outil Militaire au "Capteur Planétaire"</h2>
             
-            <h3 class="subsection-title">Navigation Personnelle</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Historiquement, le <strong>GNSS (Global Navigation Satellite System)</strong> est né d'un besoin militaire de synchronisation temporelle et de positionnement (GPS aux USA, GLONASS en URSS). Initialement fondé sur des constellations en orbite moyenne (MEO, environ 20 000 km), son usage civil s'est généralisé dans les années 90.</p>
 
-            <h3 class="subsection-title">Transport et Logistique</h3>
-            <p class="section-text"></p>
+            <div class="image-container">
+                <img src="../images/gnss-1.png" alt="Constellation GNSS" class="content-image">
+                <p class="image-caption">Figure 1 : Constellations GNSS globales</p>
+            </div>
 
-            <h3 class="subsection-title">Agriculture et Véhicules Autonomes</h3>
-            <p class="section-text"></p>
+            <h3 class="subsection-title">L'Inscription dans le Big Data</h3>
+            <p class="section-text">L'inscription du GNSS dans le domaine du Big Data n'est pas nouvelle, mais elle a changé de nature :</p>
+
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">La Donnée comme Correction</h4>
+                    <p class="section-text">Depuis des décennies, atteindre une précision centimétrique nécessite d'<strong>assimiler des flux massifs de données</strong> provenant de stations au sol pour corriger les erreurs de signal induites par l'atmosphère.</p>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">Le Satellite comme Capteur Passif</h4>
+                    <p class="section-text">Le signal GNSS est utilisé depuis longtemps pour la <strong>"réflectométrie"</strong>, transformant chaque satellite en un capteur capable de mesurer l'état des océans ou de l'ionosphère en analysant la déformation des ondes radio.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Le Passage à l'Échelle (2025)</h3>
+            <p class="section-text">Le GNSS connaît en 2025 une mutation profonde avec l'émergence des <strong>constellations LEO PNT</strong> (Positioning, Navigation, and Timing). Situés entre 500 et 1 500 km, ces satellites offrent une puissance de signal accrue et une géométrie de constellation qui change beaucoup plus rapidement que les systèmes MEO.</p>
+
+            <div class="highlight-box">
+                <h3 class="highlight-title">Convergence Ultra-Rapide</h3>
+                <p class="section-text">Cette architecture permet une convergence ultra-rapide des algorithmes : le temps nécessaire pour atteindre une précision centimétrique passe de <strong>plusieurs dizaines de minutes à quelques secondes seulement</strong>. Pour l'informaticien, cela signifie gérer des flux de données de navigation dont la vélocité est démultipliée.</p>
+            </div>
+
+            <blockquote class="quote">
+                "Le LEO PNT bouleversera l'ordre établi en matière de navigation par satellite en offrant un surcroît de précision, résilience et pénétration du signal, avec à la clé de nouvelles applications et autant de relais de croissance pour l'économie."
+                <cite class="quote-author">— Hervé Derrey, Président-Directeur général de Thales Alenia Space</cite>
+            </blockquote>
 
             <div class="stats-grid">
                 <div class="stat-card">
-                    <span class="stat-number">31</span>
-                    <span class="stat-label">Satellites GPS</span>
+                    <span class="stat-number">20,000 km</span>
+                    <span class="stat-label">Altitude MEO (GPS, Galileo)</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">± 1 cm</span>
-                    <span class="stat-label">Précision RTK</span>
+                    <span class="stat-number">500-1,500 km</span>
+                    <span class="stat-label">Altitude LEO PNT</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">Systèmes globaux</span>
+                    <span class="stat-number">< 10 sec</span>
+                    <span class="stat-label">Convergence LEO PNT</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technologies Section -->
     <section class="content-section">
         <div class="content-wrapper">
-            <h2 class="section-title">Technologies Spécifiques</h2>
+            <h2 class="section-title">L'Hybridation PPP-RTK et les Réseaux Ouverts</h2>
             
-            <h3 class="subsection-title">Hardware : Horloges Atomiques</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Le traitement des données de navigation repose désormais sur des <strong>méthodes hybrides massives</strong> :</p>
 
-            <h3 class="subsection-title">Software : Traitement du Signal GNSS</h3>
-            <p class="section-text"></p>
+            <h3 class="subsection-title">PPP-RTK et PPP-AR</h3>
+            <p class="section-text">Ces technologies combinent la couverture mondiale du <strong>Precise Point Positioning (PPP)</strong> avec la rapidité du <strong>Real-Time Kinematic (RTK)</strong>. Elles permettent de résoudre les ambiguïtés de phase en temps réel pour une précision millimétrique, essentielle pour le guidage de précision.</p>
 
-            <h3 class="subsection-title">Corrections Différentielles et RTK</h3>
-            <p class="section-text"></p>
+            <div class="highlight-box">
+                <h3 class="highlight-title">Qu'est-ce que le PPP-RTK ?</h3>
+                <p class="section-text">Le PPP-RTK est une technique de positionnement qui combine :</p>
+                <ul class="content-list">
+                    <li><strong>PPP :</strong> Utilise des corrections d'orbite et d'horloge satellites précises pour un positionnement global</li>
+                    <li><strong>RTK :</strong> Utilise des corrections locales à partir de stations de référence pour une convergence rapide</li>
+                    <li><strong>Résultat :</strong> Précision centimétrique en quelques secondes au lieu de 20-30 minutes</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Centipede-RTK : Résilience Open-Source</h3>
+            <p class="section-text">Ce réseau collaboratif <strong>open-source</strong> s'est imposé comme une infrastructure de référence en Europe avec plus de <strong>400 stations actives fin 2025</strong>. Sa résilience a été démontrée lors des tempêtes solaires d'octobre 2025, où il a maintenu un service opérationnel alors que les services satellitaires propriétaires subissaient des interruptions.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">400+</span>
+                    <span class="stat-label">Stations Centipede actives</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">< 2 cm</span>
+                    <span class="stat-label">Précision RTK</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Disponibilité (tempêtes solaires)</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- 5G/6G Integration Section -->
     <section class="content-section">
         <div class="content-wrapper">
-            <h2 class="section-title">Défis Technologiques</h2>
+            <h2 class="section-title">Localisation Haut Débit : Synergie 5G-Advanced et IA</h2>
             
-            <h3 class="subsection-title">Multi-trajets et Environnements Urbains</h3>
-            <p class="section-text"></p>
+            <p class="section-text">La localisation moderne est devenue un <strong>problème de Big Data multimodal</strong>, où le signal satellitaire n'est qu'une entrée parmi d'autres.</p>
 
-            <h3 class="subsection-title">Intégrité et Fiabilité</h3>
-            <p class="section-text"></p>
+            <h3 class="subsection-title">Fusion 5G/6G</h3>
+            <p class="section-text">L'intégration native de la localisation dans les réseaux <strong>5G-Advanced</strong> et les futurs standards <strong>6G</strong> permet des transferts de données de correction à latence ultra-faible. L'IA embarquée dans le réseau permet des <strong>"handovers"</strong> sans latence en anticipant les mouvements des terminaux.</p>
 
-            <h3 class="subsection-title">Anti-jamming et Sécurité</h3>
-            <p class="section-text"></p>
+            <div class="two-column">
+                <div class="column">
+                    <h4 class="column-title">Avantages 5G-GNSS</h4>
+                    <ul class="content-list">
+                        <li>Latence < 1 ms pour corrections RTK</li>
+                        <li>Couverture hybride (indoor/outdoor)</li>
+                        <li>Multi-constellation (GPS + Galileo + BeiDou)</li>
+                        <li>Handovers prédictifs par IA</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="column-title">Technologies Avancées</h4>
+                    <ul class="content-list">
+                        <li><strong>Signaux Chirp :</strong> Amélioration résolution temporelle</li>
+                        <li><strong>TDMA :</strong> Résistance au brouillage</li>
+                        <li><strong>Network Slicing :</strong> Garantie de QoS pour applications critiques</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Signaux Chirp et Précision Industrielle</h3>
+            <p class="section-text">De nouvelles méthodes de modulation utilisent des <strong>signaux chirp</strong> pour améliorer la résolution temporelle et la résistance au brouillage dans les environnements industriels complexes. Ces signaux à fréquence variable permettent une localisation submétrique même en environnements GNSS-dégradés.</p>
+
         </div>
     </section>
 
+    <!-- Future Section -->
     <section class="content-section">
         <div class="content-wrapper">
-            <h2 class="section-title">Le Futur & R&D</h2>
+            <h2 class="section-title">Le Futur & R&D : Géo-localisation Neuronale sans GPS</h2>
             
-            <h3 class="subsection-title">Galileo 2nd Generation</h3>
-            <p class="section-text"></p>
+            <p class="section-text">Pour les zones <strong>"GNSS-denied"</strong> (canopée dense, environnements off-road, tunnels), la recherche s'oriente vers des méthodes purement logicielles.</p>
 
-            <h3 class="subsection-title">Navigation par Pulsars</h3>
-            <p class="section-text"></p>
+            <h3 class="subsection-title">BEV-Patch-PF : Localisation par Vision</h3>
+            <p class="section-text">Le système <strong>BEV-Patch-PF</strong>, dévoilé fin 2025, utilise des réseaux de neurones pour faire correspondre des vues <strong>"Bird's-Eye-View" (BEV)</strong> issues de caméras locales avec des cartes aériennes. Cette approche réduit l'erreur de trajectoire d'un <strong>facteur 7</strong> par rapport aux méthodes classiques.</p>
 
-            <h3 class="subsection-title">IA pour Amélioration de Précision</h3>
-            <p class="section-text"></p>
+            <div class="highlight-box">
+                <h3 class="highlight-title">Fonctionnement BEV-Patch-PF</h3>
+                <ol class="content-list">
+                    <li>Capture de vues caméra locales (voiture, drone)</li>
+                    <li>Transformation en perspective Bird's-Eye-View par réseau neuronal</li>
+                    <li>Matching avec bases de données cartographiques aériennes</li>
+                    <li>Filtrage particulaire pour estimation robuste de position</li>
+                </ol>
+            </div>
+
+            <div class="image-container">
+                <img src="../images/gnss-2.png" alt="BEV-Patch-PF" class="content-image">
+                <p class="image-caption">Figure 4 : Pipeline du système BEV-Patch-PF pour localisation off-road</p>
+            </div>
+
         </div>
     </section>
 
+    <!-- References Section -->
     <section class="content-section">
         <div class="content-wrapper">
             <h2 class="section-title">Références</h2>
             <div class="bibliography">
-                <p class="biblio-entry"></p>
+                <p class="biblio-entry">
+                    <strong>[1]</strong> Eos Positioning Systems. "GPS Overview Part 1: What is GPS and GNSS Positioning?" <em>Eos Knowledge Base</em>.
+                    <a href="https://eos-gnss.com/knowledge-base/gps-overview-1-what-is-gps-and-gnss-positioning" target="_blank" rel="noopener noreferrer">eos-gnss.com</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[2]</strong> Thales Group. (2025). "Le Centre national des sciences et technologies spatiales (NSSTC) des Emirats arabes unis et Thales Alenia Space coopèrent dans le domaine de la navigation par satellite." <em>Communiqué de presse</em>.
+                    <a href="https://www.thalesgroup.com/fr/actualites-du-groupe/communiques-de-presse/le-centre-national-des-sciences-et-technologies" target="_blank" rel="noopener noreferrer">thalesgroup.com</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[3]</strong> Sony Semiconductor Solutions. (2025). "LEO-PNT: The Next Evolution of Satellite Navigation." <em>Sony Semiconductor Products Blog</em>.
+                    <a href="https://www.sony-semicon.com/en/products/lsi-ic/gps/blog/20251111.html" target="_blank" rel="noopener noreferrer">sony-semicon.com</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[4]</strong> Swift Navigation. "What is PPP-RTK?" <em>Swift Navigation Glossary</em>.
+                    <a href="https://www.swiftnav.com/glossary/what-is-ppp-rtk" target="_blank" rel="noopener noreferrer">swiftnav.com/glossary/what-is-ppp-rtk</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[5]</strong> RTK Précision. (2025). "Panne GPS agricole d'octobre 2025 : EGNOS et RTX à l'arrêt, le RTK Centipède reste stable."
+                    <a href="https://rtk-precision.fr/panne-gps-agricole-egnos-rtx/" target="_blank" rel="noopener noreferrer">rtk-precision.fr</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[6]</strong> Orsino, A., et al. (2025). "One step closer to zero-latency handovers on the path to 6G." <em>Ericsson Blog</em>.
+                    <a href="https://www.ericsson.com/en/blog/2025/12/one-step-closer-to-zero-latency-handovers-on-the-path-to-6g" target="_blank" rel="noopener noreferrer">ericsson.com</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[7]</strong> Lee, D., et al. (2025). "BEV-Patch-PF: Particle Filtering with BEV-Aerial Feature Matching for Off-Road Geo-Localization." <em>arXiv preprint</em>, arXiv:2512.15111.
+                    <a href="https://arxiv.org/abs/2512.15111" target="_blank" rel="noopener noreferrer">arXiv:2512.15111</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[8]</strong> Kim, K.-T., et al. (2025). "Improvement of Wireless Localization Precision Using Chirp Signals." <em>Sensors</em>, 25(6), 1844.
+                    <a href="https://www.mdpi.com/1424-8220/25/6/1844" target="_blank" rel="noopener noreferrer">DOI:10.3390/s25061844</a>
+                </p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Auteurs</h3>
+                <p class="footer-text">
+                    <span>Léo Calmettes</span>
+                    <span>Martin Villette</span>
+                    <span>Thomas Barand</span>
+                    <span>Shreeniketh Arasanipalai Krishnan</span>
+                    <span>Mohamed Taghouan</span>
+                    <span>Atik Belbsir</span>
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Encadrant</h3>
+                <p class="footer-text">Stéphane Derrode</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Formation</h3>
+                <p class="footer-text">UE : Défis Informatique du Big Data</p>
+                <p class="footer-text">École Centrale de Lyon - 2025</p>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="../script.js"></script>
 </body>

@@ -457,3 +457,125 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* Footer */
+.footer {
+    background: rgba(10, 10, 20, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+/* Authors list styling */
+.footer-section:first-child .footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-section:first-child .footer-text::before {
+    content: '';
+    display: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Page-specific footer accents */
+.page-meteo .footer {
+    border-top-color: rgba(112, 192, 255, 0.3);
+}
+
+.page-meteo .footer-title {
+    color: #70c0ff;
+}
+
+.page-telecom .footer {
+    border-top-color: rgba(168, 85, 247, 0.3);
+}
+
+.page-telecom .footer-title {
+    color: #a855f7;
+}
+
+.page-observation .footer {
+    border-top-color: rgba(52, 211, 153, 0.3);
+}
+
+.page-observation .footer-title {
+    color: #34d399;
+}
+
+.page-navigation .footer {
+    border-top-color: rgba(251, 191, 36, 0.3);
+}
+
+.page-navigation .footer-title {
+    color: #fbbf24;
+}
+
+.page-defense .footer {
+    border-top-color: rgba(248, 113, 113, 0.3);
+}
+
+.page-defense .footer-title {
+    color: #f87171;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-title {
+        font-size: 1rem;
+    }
+    
+    .footer-text {
+        font-size: 0.9rem;
+    }
+}

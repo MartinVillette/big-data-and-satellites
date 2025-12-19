@@ -45,7 +45,7 @@
     <!-- Hero Section -->
     <header class="hero">
         <h1 class="hero-title">Big Data & Satellites</h1>
-        <p class="hero-subtitle">L'exploration de l'Univers de l'Information</p>
+        <p class="hero-subtitle">L'Exploration de l'Univers de l'Information</p>
         <a href="#intro" class="hero-cta">Découvrir</a>
     </header>
 
@@ -78,15 +78,18 @@
                 <p class="section-text">Au 1er décembre 2025, plus de <strong>14 100 satellites actifs</strong> orbitent autour de la Terre, une augmentation exponentielle portée par le déploiement de méga-constellations commerciales. À titre de comparaison, on comptait moins de 3 000 satellites actifs au début de la décennie.</p>
             </div>
 
-            <h3 class="subsection-title">Un poids économique majeur</h3>
-            <p class="section-text">L'économie spatiale mondiale a atteint <strong>613 milliards de dollars en 2024</strong>, dont 78 % proviennent désormais du secteur commercial et non plus des budgets étatiques.</p>
+            <div class="highlight-box">
+                <h3 class="subsection-title">Un poids économique majeur</h3>
+                <p class="section-text">L'économie spatiale mondiale a atteint <strong>613 milliards de dollars en 2024</strong>, dont 78 % proviennent désormais du secteur commercial et non plus des budgets étatiques.</p>
+            </div>
 
-            <h3 class="subsection-title">L'ère du pétaoctet</h3>
-            <p class="section-text">Le volume de données transitant par l'espace a changé d'échelle. La seule constellation <strong>Starlink (SpaceX)</strong> transfère quotidiennement plus de <strong>42 Pétaoctets (PB)</strong> de données via ses liaisons inter-satellitaires.</p>
-
-            <blockquote class="quote">
-                Ce rapport se propose d'analyser les défis informatiques posés par cette nouvelle architecture spatiale, où la gestion du volume, de la vitesse de transmission et de la diversité des capteurs constitue un cas d'étude particulièrement représentatif des enjeux modernes du Big Data.
-            </blockquote>
+            <div class="highlight-box">
+                <h3 class="subsection-title">L'ère du pétaoctet</h3>
+                <p class="section-text">Le volume de données transitant par l'espace a changé d'échelle. La seule constellation <strong>Starlink (SpaceX)</strong> transfère quotidiennement plus de <strong>42 Pétaoctets (PB)</strong> de données via ses liaisons inter-satellitaires.</p>
+            </div>
+            
+            <h3 class="subsection-title">Objectif du rapport</h3>
+            <p class="section-text">Ce rapport se propose d'analyser les défis informatiques posés par cette nouvelle architecture spatiale, où la gestion du volume, de la vitesse de transmission et de la diversité des capteurs constitue un cas d'étude particulièrement représentatif des enjeux modernes du Big Data.</p>
         </div>
     </section>
 
@@ -95,129 +98,104 @@
         <div class="content-wrapper">
             <h2 class="section-title">Une Multiplicité d'Applications : De la Donnée à la Décision</h2>
             
-            <p class="section-text">La valeur des données spatiales réside dans leurs applications et leur transformation en <strong>intelligence exploitable</strong> pour l'économie terrestre. Ce rapport détaillera les secteurs suivants :</p>
+            <p class="section-text">La valeur des données spatiales ne réside plus dans leur simple acquisition, mais dans leur capacité à être transformées en <strong>intelligence exploitable</strong> pour l'ensemble des secteurs de l'activité humaine. Ces applications, extrêmement variées, peuvent être regroupées en quatre grands pôles stratégiques illustrant comment la donnée spatiale transforme aujourd'hui l'économie terrestre :</p>
 
-            <div class="two-column">
-                <div class="column">
-                    <h4 class="column-title">Observation de la Terre & Environnement</h4>
-                    <ul class="content-list">
-                        <li>Surveillance du changement climatique</li>
-                        <li>Agriculture de précision (optimisation des rendements)</li>
-                        <li>Gestion des catastrophes naturelles (inondations, feux de forêts)</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h4 class="column-title">Télécommunications & Connectivité</h4>
-                    <ul class="content-list">
-                        <li>Réduction de la fracture numérique</li>
-                        <li>Connectivité à haut débit pour les transports (aérien, maritime)</li>
-                        <li>Couverture globale et permanente</li>
-                    </ul>
-                </div>
+            <div class="applications-grid">
+                <a href="pages/meteo.html" class="application-card">
+                    <div class="card-icon">☁️</div>
+                    <h3 class="card-title">Météorologie & Climat</h3>
+                    <p class="card-description">Surveillance critique du changement climatique et gestion de "déluges" de données exa-métriques.</p>
+                    <span class="card-link">Explorer →</span>
+                </a>
+
+                <a href="pages/telecom.html" class="application-card">
+                    <div class="card-icon">📡</div>
+                    <h3 class="card-title">Télécommunications & SatCom</h3>
+                    <p class="card-description">Connectivité mondiale à haut débit, indépendante des infrastructures terrestres.</p>
+                    <span class="card-link">Explorer →</span>
+                </a>
+
+                <a href="pages/observation.html" class="application-card">
+                    <div class="card-icon">🌍</div>
+                    <h3 class="card-title">Observation de la Terre</h3>
+                    <p class="card-description">Agriculture de précision et monitoring environnemental haute résolution.</p>
+                    <span class="card-link">Explorer →</span>
+                </a>
+
+                <a href="pages/navigation.html" class="application-card">
+                    <div class="card-icon">🛰️</div>
+                    <h3 class="card-title">Navigation & GNSS</h3>
+                    <p class="card-description">Localisation de précision décimétrique, pivot de la mobilité autonome.</p>
+                    <span class="card-link">Explorer →</span>
+                </a>
             </div>
-
-            <h3 class="subsection-title">Internet des Objets (IoT)</h3>
-            <p class="section-text">La connexion massive de petits objets (containers, capteurs industriels, balises de suivi de la faune) via des réseaux dédiés à basse consommation. Par exemple, la constellation française <strong>Kinéis</strong> est dimensionnée pour traiter jusqu'à <strong>30 millions de messages par jour</strong>, illustrant le défi du "Big Data" appliqué à une multitude de petits paquets de données.</p>
-
-            <h3 class="subsection-title">Défense & Sécurité</h3>
-            <p class="section-text">L'utilisation duale des données pour la surveillance des frontières, le renseignement géospatial et la souveraineté numérique.</p>
         </div>
     </section>
 
     <!-- Gouvernance Section -->
     <section class="content-section">
         <div class="content-wrapper">
-            <h2 class="section-title">Acteurs, Gouvernance et Défis : Un Écosystème Complexe</h2>
+            <h2 class="section-title">Acteurs, Gouvernance et Souveraineté : Un Écosystème sous Tension</h2>
             
-            <p class="section-text">L'exploitation de ces données s'opère dans un cadre juridique et concurrentiel en pleine mutation, soulevant des questions de gouvernance critiques.</p>
+            <p class="section-text">L'exploitation des données satellitaires s'opère dans un cadre concurrentiel et juridique en pleine mutation, soulevant des questions de gouvernance critiques où la <strong>technologie et la géopolitique se rejoignent</strong>.</p>
 
-            <h3 class="subsection-title">La dichotomie Privé / Public</h3>
+            <h3 class="subsection-title">A. La Dichotomie Privé / Public : L'Irruption des Acteurs Systémiques</h3>
+            <p class="section-text">Le secteur est marqué par une tension entre deux logiques d'exploitation :</p>
             
             <div class="two-column">
                 <div class="column">
-                    <h4 class="column-title">New Space (Acteurs Privés)</h4>
-                    <p class="section-text">Les acteurs du New Space (SpaceX, Amazon Kuiper, Planet) imposent des standards de vitesse et de volume, opérant des milliers de satellites en orbite basse. <strong>SpaceX contrôle à lui seul environ 65 % des satellites actifs</strong>.</p>
+                    <h4 class="column-title">New Space et Intégration Verticale</h4>
+                    <p class="section-text">Des entreprises comme <strong>SpaceX (Starlink)</strong> ou <strong>Amazon (Kuiper)</strong> ne sont plus de simples fournisseurs ; elles contrôlent l'intégralité de la chaîne (satellites, terminaux, flux et algorithmes). Cette position les transforme en <strong>acteurs géopolitiques "systémiques"</strong>, capables d'agir comme arbitres opérationnels dans des conflits armés, comme l'a révélé l'épisode des restrictions Starlink en Ukraine.</p>
                 </div>
                 <div class="column">
                     <h4 class="column-title">Agences Institutionnelles</h4>
-                    <p class="section-text">Les agences institutionnelles (CNES, ESA, NASA) se concentrent sur la science de pointe, la régulation et le soutien à l'innovation, gérant des archives de données patrimoniales immenses (ex: le Data Lake du CNES vise les <strong>100 Po de capacité</strong>).</p>
+                    <p class="section-text">Des organismes comme le <strong>CNES</strong> ou l'<strong>ESA</strong> se concentrent sur la science, la régulation et la constitution de réservoirs de données patrimoniales immenses (le Data Lake du CNES vise les <strong>100 Po</strong> de capacité).</p>
                 </div>
             </div>
-
-            <div class="highlight-box">
-                <h3 class="highlight-title">Souveraineté des données</h3>
-                <p class="section-text">La dépendance aux infrastructures privées américaines pour le transit de données critiques pose la question de l'<strong>autonomie stratégique européenne</strong>.</p>
-            </div>
-
-            <h3 class="subsection-title">Le défi de la durabilité (STM)</h3>
-            <p class="section-text">Avec plus de 14 000 satellites et des milliers de débris orbitaux, la gestion du trafic spatial (<strong>Space Traffic Management</strong>) devient elle-même un problème de Big Data. Il est impératif de traiter des millions de trajectoires pour éviter les collisions et garantir la pérennité de l'orbite basse comme ressource exploitable.</p>
 
             <div class="stats-grid">
                 <div class="stat-card">
                     <span class="stat-number">65%</span>
-                    <span class="stat-label">Part de SpaceX</span>
+                    <span class="stat-label">Part de SpaceX (satellites actifs)</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-number">100 Po</span>
-                    <span class="stat-label">Data Lake CNES</span>
+                    <span class="stat-label">Data Lake CNES (objectif)</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">30M msgs/j</span>
-                    <span class="stat-label">Constellation Kinéis</span>
+                    <span class="stat-number">78%</span>
+                    <span class="stat-label">Part commerciale (vs étatique)</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Définition Satellite Section -->
-    <section class="content-section">
-        <div class="content-wrapper">
-            <h2 class="section-title">Qu'est-ce qu'un Satellite ?</h2>
-            
-            <h3 class="subsection-title">Définition Technique</h3>
-            <p class="section-text">Un satellite artificiel est un objet fabriqué par l'homme, placé en orbite autour de la Terre (ou d'un autre corps céleste) pour remplir diverses missions : observation, télécommunication, navigation ou recherche scientifique. Il reste en orbite grâce à l'équilibre entre la force gravitationnelle et sa vitesse tangentielle.</p>
+            <h3 class="subsection-title">B. Cadre Juridique et Régulation des Données</h3>
+            <p class="section-text">La gouvernance du Big Data spatial tente de concilier des principes historiques et des exigences modernes :</p>
 
-            <h3 class="subsection-title">Types de Satellites</h3>
+            <h4 class="column-title">Normes Internationales</h4>
             <ul class="content-list">
-                <li><strong>Satellites d'observation :</strong> Surveillance de la surface terrestre, océanographie, cartographie (ex: Sentinel, Landsat)</li>
-                <li><strong>Satellites météorologiques :</strong> Prévision du temps, suivi des phénomènes climatiques (ex: Météosat, GOES)</li>
-                <li><strong>Satellites de télécommunication :</strong> Transmission de données, internet, télévision (ex: Starlink, Eutelsat)</li>
-                <li><strong>Satellites de navigation :</strong> Positionnement global (GPS, Galileo, GLONASS)</li>
-                <li><strong>Satellites scientifiques :</strong> Recherche spatiale, astronomie (ex: Hubble, James Webb)</li>
+                <li><strong>Traité de l'Espace (1967) :</strong> Principe de non-souveraineté spatiale</li>
+                <li><strong>Principes de l'ONU (1986) :</strong> Souveraineté des États sur les données territoriales les concernant</li>
             </ul>
-        </div>
-    </section>
 
-    <!-- Aspects Techniques Section -->
-    <section class="content-section">
-        <div class="content-wrapper">
-            <h2 class="section-title">Aspects Techniques</h2>
-            
-            <h3 class="subsection-title">Orbites et Trajectoires</h3>
-            <p class="section-text">Les satellites sont positionnés sur différentes orbites en fonction de leur mission. Les orbites basses (LEO) permettent une observation détaillée mais nécessitent de nombreux satellites pour une couverture continue. Les orbites géostationnaires (GEO) offrent une vision fixe d'une région mais avec une latence plus élevée.</p>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-number">500-2000 km</span>
-                    <span class="stat-label">Orbite basse (LEO)</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">35,786 km</span>
-                    <span class="stat-label">Orbite géostationnaire (GEO)</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">7.8 km/s</span>
-                    <span class="stat-label">Vitesse orbitale LEO</span>
-                </div>
-            </div>
+            <h4 class="column-title">Arsenal Réglementaire Européen</h4>
+            <p class="section-text">L'UE s'impose comme un régulateur majeur avec le <strong>RGPD</strong>, qui s'applique à toute donnée personnelle identifiable par satellite (ex: floutage automatique des visages via IA embarquée), et le futur <strong>EU Space Act</strong>. Ce dernier instaurera un certificat de conformité via le registre URSO pour garantir la traçabilité de l'information.</p>
 
-            <h3 class="subsection-title">Capteurs et Instruments</h3>
-            <p class="section-text">Les satellites modernes embarquent une variété de capteurs : optiques (caméras haute résolution), radar (SAR pour observation tout-temps), sondeurs atmosphériques (profilage vertical), et spectromètres (analyse de la composition chimique). Chaque instrument génère des volumes de données considérables nécessitant des chaînes de traitement sophistiquées.</p>
-            
-            <blockquote class="quote">
-                "Remote sensing big data computing brings both unprecedented challenges and opportunities in terms of data volume, velocity, variety, veracity, and value."
-                <cite class="quote-author">— Ma et al. (2015), Future Generation Computer Systems</cite>
-            </blockquote>
+            <h3 class="highlight-title">Protection et "Privacy by Design"</h3>
+            <p class="section-text">Face aux capacités d'identification croissantes, l'intégration de mécanismes d'anonymisation dès la conception est désormais une obligation technique pour protéger la vie privée.</p>
+        
+
+            <h3 class="subsection-title">C. Enjeux de Souveraineté et Autonomie Stratégique</h3>
+            <p class="section-text">La dépendance aux infrastructures privées américaines pose la question de l'<strong>autonomie européenne</strong>.</p>
+
+            <h4 class="column-title">Localisation des Données</h4>
+            <p class="section-text">À l'instar de l'<strong>Inde (2025)</strong> qui impose le stockage local de 20 % des installations au sol, les États cherchent à réaffirmer leur contrôle sur les flux transitant au-dessus de leur territoire.</p>
+
+            <h4 class="column-title">Infrastructures Fédérées</h4>
+            <p class="section-text">L'Europe répond par des initiatives comme <strong>IRIS²</strong> et la mise en place de <strong>Data Spaces</strong> (ex: Copernicus Data Space). La <strong>Space Data Marketplace</strong> agit désormais comme un service d'intermédiation certifié pour sécuriser les échanges entre producteurs et utilisateurs.</p>
+
+            <h4 class="column-title">Gestion du Trafic Spatial (STM)</h4>
+            <p class="section-text">Avec plus de 14 000 satellites et des milliers de débris, la gestion des trajectoires devient elle-même un <strong>problème de Big Data</strong> crucial pour garantir la pérennité de l'orbite basse comme ressource exploitable.</p>
+
         </div>
     </section>
 
@@ -232,21 +210,65 @@
                 </p>
                 
                 <p class="biblio-entry">
-                    <strong>[2]</strong> Space Foundation. (2024). "The Space Report 2024: Global Space Economy."
+                    <strong>[2]</strong> Jakhu, R., Pelton, J. N., & Nyampong, Y. O. M. (Eds.). (2017). <em>Space Governance: An International Study</em>. Springer International Publishing.
+                    <a href="https://doi.org/10.1007/978-3-319-54364-2" target="_blank" rel="noopener noreferrer">DOI:10.1007/978-3-319-54364-2</a>
                 </p>
                 
                 <p class="biblio-entry">
-                    <strong>[3]</strong> CNES. "Le Data Lake du CNES pour la science de la Terre."
+                    <strong>[3]</strong> European Commission. (2023). "EU Space Strategy for Security and Defence." <em>Publications Office of the European Union</em>.
+                    <a href="https://defence-industry-space.ec.europa.eu/" target="_blank" rel="noopener noreferrer">EU Space Strategy</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[4]</strong> Pelton, J. N. (2019). <em>New Solutions for the Space Debris Crisis</em>. Springer International Publishing.
+                    <a href="https://doi.org/10.1007/978-3-030-16657-4" target="_blank" rel="noopener noreferrer">DOI:10.1007/978-3-030-16657-4</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[5]</strong> Règlement (UE) 2022/868 du Parlement européen et du Conseil du 30 mai 2022 relatif à la gouvernance européenne des données (Data Governance Act).
+                    <a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32022R0868" target="_blank" rel="noopener noreferrer">EUR-Lex</a>
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[6]</strong> Space Foundation. (2024). "The Space Report 2024: Global Space Economy."
+                </p>
+                
+                <p class="biblio-entry">
+                    <strong>[7]</strong> CNES. "Le Data Lake du CNES pour la science de la Terre."
                     <a href="https://www.cnes.fr" target="_blank" rel="noopener noreferrer">www.cnes.fr</a>
-                </p>
-                
-                <p class="biblio-entry">
-                    <strong>[4]</strong> Kinéis. "IoT Constellation: 30 Million Messages per Day."
-                    <a href="https://www.kineis.com" target="_blank" rel="noopener noreferrer">www.kineis.com</a>
                 </p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Auteurs</h3>
+                <p class="footer-text">
+                    <span>Arasanipalai Krishnan Shreeniketh</span>
+                    <span>Barand Thomas</span>
+                    <span>Belbsir Atik</span>
+                    <span>Calmettes Léo</span>
+                    <span>Taghouan Mohamed</span>
+                    <span>Villette Martin</span>
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Encadrant</h3>
+                <p class="footer-text">Derrode Stéphane</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Formation</h3>
+                <p class="footer-text">UE : Défis Informatique du Big Data</p>
+                <p class="footer-text">École Centrale de Lyon - 2025</p>
+            </div>
+        </div>
+        
+    </footer>
 
     <script src="script.js"></script>
 </body>
